@@ -14,7 +14,7 @@ export default function BlogForm() {
     <div>
       <h1>Blog title</h1>
       <form action="">
-        <label htmlFor="blogTitle">Title</label>
+        <label htmlFor="blogTitle">Title 1</label>
         <input
           type="text"
           value={title}
