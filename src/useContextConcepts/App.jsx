@@ -1,11 +1,8 @@
-import BlogForm from "./components/blogs/blogForm";
-import Header from "./components/Header";
-import Todo from "./components/Todo";
-import Test from "./components/Test";
+import Header from "../useContextConcepts/components/Header";
 import { createContext, useState } from "react";
-import { Login } from "./components/login";
-import Form from "./components/Form";
-import { AuthContext, AuthenticatedUserContext } from "./components/contexts";
+import { Login } from "../useContextConcepts/components/Login";
+import Form from "../useContextConcepts/components/Form";
+import { AuthContext, AuthenticatedUserContext } from "./contexts";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -19,7 +16,6 @@ function App() {
               <AuthenticatedUserContext.Provider value={"Mastanbi"}>
                 <Header setIsAuth={setIsAuth} isAuth={isAuth} />
                 <Form />
-                <BlogForm />
               </AuthenticatedUserContext.Provider>
             }
           </AuthContext.Provider>

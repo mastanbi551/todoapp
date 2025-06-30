@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AuthenticatedUserContext } from "./contexts";
+import { AuthenticatedUserContext } from "../contexts";
 
 export default function Form({ todos, setTodos }) {
   const [todo, setTodo] = useState("Vijaya");
@@ -15,7 +15,6 @@ export default function Form({ todos, setTodos }) {
 
   return (
     <div className="form">
-      <h1>Welcome {authenticatedUser}</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
